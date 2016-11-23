@@ -20,7 +20,7 @@ import com.nh.esb.ws.NhEsbClientFactory;
  */
 public class CXFExecutor implements IMicroExecutor {
 
-	//@Override
+	@Override
 	public NhCmdResult execNhCmd(NhCmdRequest nhCmdRequest) throws Exception {
 		String sysId=nhCmdRequest.getToSysId();
 		INhCmdService cmdService=NhEsbClientFactory.getClient(sysId);
