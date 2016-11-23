@@ -58,8 +58,8 @@
 	<bean id="addressSysB" class="com.nh.esb.core.NhEsbAddress">
 	<property name="sysid" value="dicService"></property>
 	<property name="ip" value="localhost"></property>
-	<property name="port" value="8180"></property>
-	<property name="url" value="http://localhost:8180/dicService/webservice/nhCmdService"></property>
+	<property name="port" value="8080"></property>
+	<property name="url" value="http://localhost:8080/dicService/webservice/nhCmdService"></property>
 
 	</bean>
 </beans>
