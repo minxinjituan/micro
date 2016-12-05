@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mx.micro</groupId>
+  <artifactId>micro-executor-spring</artifactId>
+  <version>${project.release.version}</version>
+    <properties>
+        <project.release.version>0.0.1-SNAPSHOT</project.release.version>
+    </properties>
+ 
+    <profiles>
+        <profile>
+            <id>product</id>
+	    <properties>
+ 	        <project.release.version>0.0.1-RELEASE</project.release.version>
+	    </properties>
+        </profile>
+    </profiles>
+    <dependencies>
+  	<dependency>
+  		<groupId>com.mx.micro</groupId>
+  		<artifactId>micro-executor-core</artifactId>
+  		<version>${project.release.version}</version>
+  	</dependency>
+  </dependencies>  
+  
+  
+    
+    <build>
+      <pluginManagement>
+          <plugins>	
+               <plugin>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>3.5.1</version>
+                  <configuration>
+                      <source>1.6</source>
+                      <target>1.6</target>
+                      <encoding>UTF-8</encoding>
+                         <compilerArguments>
+	            			<extdirs>${project.basedir}/lib</extdirs>
+	      					</compilerArguments>
+                  </configuration>
+              </plugin>
+          </plugins>
+      </pluginManagement>
+  </build> 
+  
+  
+   <distributionManagement>
+  <snapshotRepository>
+    <id>snapshopts</id>
+    <url>http://10.10.24.223:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+  <repository>
+    <id>releases</id>
+    <url>http://10.10.24.223:8081/nexus/content/repositories/thirdparty/</url>
+  </repository>
+</distributionManagement>     
+  
+  
+  
+</project>

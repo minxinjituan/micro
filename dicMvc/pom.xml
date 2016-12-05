@@ -5,6 +5,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
+    	<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
   	<dependency>
   		<groupId>com.mx.common.dic</groupId>
   		<artifactId>dic-service-bean</artifactId>
@@ -20,7 +26,35 @@
   		<artifactId>micro-executor-cxf</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  		<dependency>
+  		<groupId>com.mx.micro</groupId>
+  		<artifactId>micro-executor-akka</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.mx.micro</groupId>
+  		<artifactId>micro-executor-spring</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>  	
+	
   </dependencies>
   
-
+    <build>
+      <pluginManagement>
+          <plugins>	
+               <plugin>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>3.5.1</version>
+                  <configuration>
+                      <source>1.6</source>
+                      <target>1.6</target>
+                      <encoding>UTF-8</encoding>
+                         <compilerArguments>
+	            			<extdirs>${project.basedir}/src/main/webapp/WEB-INF/lib</extdirs>
+	      					</compilerArguments>
+                  </configuration>
+              </plugin>
+          </plugins>
+      </pluginManagement>
+  </build> 
 </project>
