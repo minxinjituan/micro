@@ -59,15 +59,15 @@
 
 	<build>
 		<plugins>
-		
-		<plugin>    
-    <groupId>org.apache.maven.plugins</groupId>  
-    <artifactId>maven-resources-plugin</artifactId>  
-    <configuration>  
-         <encoding>UTF-8</encoding>  
-    </configuration>  
-</plugin>  
-		
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -91,7 +91,7 @@
 						</goals>
 					</execution>
 				</executions>
-				
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -105,9 +105,9 @@
 						</goals>
 					</execution>
 				</executions>
-				    <configuration>  
-         <encoding>UTF-8</encoding>  
-    </configuration>  
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -121,9 +121,9 @@
 						</goals>
 					</execution>
 				</executions>
-				    <configuration>  
-         <encoding>UTF-8</encoding>  
-    </configuration>  
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
 			</plugin>
 
 
