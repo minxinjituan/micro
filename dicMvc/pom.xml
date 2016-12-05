@@ -17,24 +17,24 @@
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	  	<dependency>
-  		<groupId>com.mx.micro</groupId>
+  		<groupId>com.github.minxinjituan</groupId>
   		<artifactId>micro-executor-core</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.1-RELEASE</version>
   	</dependency>
 	<dependency>
-  		<groupId>com.mx.micro</groupId>
+  		<groupId>com.github.minxinjituan</groupId>
   		<artifactId>micro-executor-cxf</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.1-RELEASE</version>
   	</dependency>
   		<dependency>
-  		<groupId>com.mx.micro</groupId>
+  		<groupId>com.github.minxinjituan</groupId>
   		<artifactId>micro-executor-akka</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.1-RELEASE</version>
   	</dependency>
   	<dependency>
-  		<groupId>com.mx.micro</groupId>
+  		<groupId>com.github.minxinjituan</groupId>
   		<artifactId>micro-executor-spring</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.1-RELEASE</version>
   	</dependency>  	
 	
   </dependencies>
