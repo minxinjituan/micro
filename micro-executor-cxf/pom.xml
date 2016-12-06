@@ -18,7 +18,7 @@
 	</profiles>
 	<dependencies>
 		<dependency>
-			<groupId>com.mx.micro</groupId>
+			<groupId>com.github.minxinjituan</groupId>
 			<artifactId>micro-executor-core</artifactId>
 			<version>${project.release.version}</version>
 		</dependency>
