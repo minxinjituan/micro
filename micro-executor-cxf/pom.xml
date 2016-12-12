@@ -22,16 +22,16 @@
 			<artifactId>micro-executor-core</artifactId>
 			<version>${project.release.version}</version>
 		</dependency>
-		<dependency>
+<!-- 		<dependency>
 			<groupId>com.github.jeffreyning</groupId>
 			<artifactId>nhesb-core</artifactId>
 			<version>0.0.2-RELEASE</version>
-		</dependency>
-		<dependency>
+		</dependency> -->
+ 		<dependency>
 			<groupId>com.github.jeffreyning</groupId>
 			<artifactId>nhesb-client-ws</artifactId>
-			<version>0.0.2-RELEASE</version>
-		</dependency>
+			<version>0.0.3-RELEASE</version>
+		</dependency> 
 
 	</dependencies>
 
