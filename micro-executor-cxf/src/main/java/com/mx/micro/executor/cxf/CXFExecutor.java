@@ -11,6 +11,7 @@ import com.mx.micro.executor.IMicroExecutor;
 import com.nh.esb.core.INhCmdService;
 import com.nh.esb.core.NhCmdRequest;
 import com.nh.esb.core.NhCmdResult;
+import com.nh.esb.core.NhEsbAddress;
 import com.nh.esb.ws.NhEsbClientFactory;
 
 /**
@@ -24,6 +25,12 @@ public class CXFExecutor implements IMicroExecutor {
 	public NhCmdResult execNhCmd(NhCmdRequest nhCmdRequest) throws Exception {
 		String sysId=nhCmdRequest.getToSysId();
 		INhCmdService cmdService=NhEsbClientFactory.getClient(sysId);
+		NhCmdResult result=cmdService.execNhCmd(nhCmdRequest);	
+		return result;
+	}
+	
+	public NhCmdResult execNhCmd(NhCmdRequest nhCmdRequest,NhEsbAddress address) throws Exception {
+		INhCmdService cmdService=NhEsbClientFactory.getClient(address);
 		NhCmdResult result=cmdService.execNhCmd(nhCmdRequest);	
 		return result;
 	}
